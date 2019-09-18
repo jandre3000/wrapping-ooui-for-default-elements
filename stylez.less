@@ -1,0 +1,173 @@
+@import (reference, less) "~oojs-ui/dist/oojs-ui-wikimediaui.css";
+@import (reference, less) "~oojs-ui/dist/oojs-ui-core-wikimediaui.css";
+
+html, body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+/**
+ * Default button
+ */
+button {
+	.oo-ui-buttonElement;
+	.oo-ui-buttonElement > .oo-ui-buttonElement-button;
+	.oo-ui-buttonElement-framed > .oo-ui-buttonElement-button;
+	.oo-ui-buttonElement-framed.oo-ui-labelElement > .oo-ui-buttonElement-button;
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button;
+	margin: 4px;
+}
+
+button:hover {
+	background-color: #fff;
+    color: #444;
+    border-color: #a2a9b1;
+}
+
+button:active {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button;
+}
+
+button:focus {
+	border-color: #36c;
+	box-shadow: inset 0 0 0 1px #36c, inset 0 0 0 2px #fff;
+	outline: 0;
+}
+
+/**
+ * Primary progressive button
+ */
+button.button--primary-progressive {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button;
+}
+
+button.button--primary-progressive:hover {
+	background-color: #447ff5;
+	border-color: #447ff5;
+}
+
+button.button--primary-progressive:active {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button;
+}
+
+button.button--primary-progressive:focus {
+	border-color: #36c;
+	box-shadow: inset 0 0 0 1px #36c, inset 0 0 0 2px #fff;
+}
+
+/**
+ * Primary destructive button
+ */
+button.button--primary-destructive {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button;
+}
+
+button.button--primary-destructive:hover {
+    background-color: #ff4242;
+    border-color: #ff4242;
+}
+
+button.button--primary-destructive:active {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button;
+}
+
+button.button--primary-destructive:focus {
+    border-color: #d33;
+    box-shadow: inset 0 0 0 1px #d33, inset 0 0 0 2px #fff;
+}
+
+/**
+ * Progressive button
+ */
+button.button--progressive {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button;
+}
+
+button.button--progressive:hover {
+	background-color: #fff;
+	border-color: #447ff5;
+}
+
+button.button--progressive:active {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button;
+}
+
+/**
+ * Destructive button
+ */
+button.button--destructive {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button;
+}
+
+button.button--destructive:hover {
+	background-color: #fff;
+    border-color: #ff4242;
+}
+
+button.button--destructive:focus {
+	border-color: #d33;
+	box-shadow: inset 0 0 0 1px #d33;
+}
+
+button.button--destructive:active {
+	.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button;
+}
+
+/**
+ * Disabled button
+ */
+button[disabled] {
+	.oo-ui-buttonElement.oo-ui-widget-disabled > .oo-ui-buttonElement-button;
+	.oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button;
+}
+
+button[disabled]:hover {
+	.oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button;
+}
+/**
+ * Icons
+ */
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.87; // simulate stext black
+}
+
+// assuming an [ [icon] label ] button layout
+button > .icon:first-child {
+	margin-right: 8px;
+}
+
+.icon--tag {
+	.oo-ui-icon-tag;
+}
+
+.icon--progressive-tag {
+	.oo-ui-image-progressive.oo-ui-icon-tag;
+}
+
+.icon--destructive-tag {
+	.oo-ui-image-destructive.oo-ui-icon-tag;
+}
+
+.icon--invert-tag {
+	.oo-ui-image-invert.oo-ui-icon-tag;
+}
+
+/**
+ * Indicator
+ */
+.indicator {
+	.icon;
+	width: 12px;
+	margin-left: 8px;
+}
+
+.indicator--down {
+	.oo-ui-indicator-down;
+}
+

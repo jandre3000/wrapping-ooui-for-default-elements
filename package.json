@@ -1,0 +1,17 @@
+{
+  "name": "less-ooui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.10.1",
+    "oojs-ui": "^0.33.4",
+    "parcel-bundler": "^1.12.3"
+  }
+}
